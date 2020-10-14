@@ -36,7 +36,10 @@
         "specialLink": ["hrefLeft", "hrefRight"],
         "aspects": ["invalidHref", "preferButton"]
       }
-    ]
+    ],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", "jsx", ".ts", "tsx"] }],
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "react/jsx-props-no-spreading": 0
   },
   "globals": {
     "React": "writable"
