@@ -22,7 +22,8 @@
       "node": {
         "extensions": [".js", ".jsx", ".ts", "tsx"],
         "paths": ["."]
-      }
+      },
+      "typescript": {}
     }
   },
   "parserOptions": {
