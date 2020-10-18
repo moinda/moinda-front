@@ -17,6 +17,11 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", "tsx"]
+      }
     }
   },
   "parserOptions": {
@@ -39,7 +44,17 @@
     ],
     "react/jsx-filename-extension": [2, { "extensions": [".js", "jsx", ".ts", "tsx"] }],
     "@typescript-eslint/explicit-module-boundary-types": 0,
-    "react/jsx-props-no-spreading": 0
+    "react/jsx-props-no-spreading": 0,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "globals": {
     "React": "writable"
