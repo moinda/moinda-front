@@ -2,6 +2,7 @@
   "presets": ["next/babel"],
   "plugins": [
     ["styled-components", { "ssr": true }],
-    ["module-resolver", { "root": ["./"], "alias": { "@/*": "./" } }]
+    ["module-resolver", { "root": ["./"], "alias": { "@/*": "./" } }],
+    ["react-require"]
   ]
 }
