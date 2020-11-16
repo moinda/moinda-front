@@ -8,11 +8,13 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "airbnb",
+    "prettier",
+    "prettier/react"
   ],
   "settings": {
     "react": {
@@ -59,7 +61,8 @@
     ],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/jsx-one-expression-per-line": "off"
   },
   "globals": {
     "React": "writable"
